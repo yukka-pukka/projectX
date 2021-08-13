@@ -1,0 +1,506 @@
+[ {
+  "Address" : "2123 E Union St",
+  "Name" : "Adey Abeba Ethiopian Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2800 E Cherry St",
+  "Name" : "Agelgil Ethiopian Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1508 NE 117th St",
+  "Name" : "Ahadu Ethiopian Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5710 Rainier Ave S",
+  "Name" : "Amy’s Merkato",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "12621 Renton Ave S",
+  "Name" : "Angel City Deli",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4423 Rainier Ave S",
+  "Name" : "Bana Ethiopian and Eritrean Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4556 Martin Luther King Jr Way S",
+  "Name" : "Bananas Grill",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2200 S Jackson S",
+  "Name" : "Chef Cafe",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5400 Rainier Ave S",
+  "Name" : "City Teriyaki",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1600 Post Alley",
+  "Name" : "Café Campagne",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "3219 Martin Luther King Jr Way S",
+  "Name" : "Café Ibex",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2715 E Cherry St",
+  "Name" : "Café Selam",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1400 34th Ave",
+  "Name" : "Café Soleil",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "11805 Renton Ave S",
+  "Name" : "Catfish Corner Express",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2509 E Cherry St",
+  "Name" : "Central Café and Juice Bar",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "Seattle Food Truck",
+  "Name" : "Cheech and Changas",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2200 S Jackson St",
+  "Name" : "Chef Cafe",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5400 Rainier Ave S",
+  "Name" : "City Teriyaki",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "116 21st Ave #5912",
+  "Name" : "Clean Greens Farm and Market",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5620 6th Ave S",
+  "Name" : "Conscious Eatery",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "6721 Martin Luther King Jr Way S",
+  "Name" : "Corte Fino",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5701 Rainier Ave S",
+  "Name" : "Delish Ethiopian Cuisine",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "9261 57th Ave S",
+  "Name" : "Drae’s Lake Route Eatery",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "306 23rd Ave S #104",
+  "Name" : "East African Imports & Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "3756 Rainier Ave",
+  "Name" : "Emerald City Fish & Chips",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5303 Rainier Ave S",
+  "Name" : "Emma’s BBQ",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "11546 15th Ave NE",
+  "Name" : "Enat Ethiopian Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "23rd &, E Jefferson St",
+  "Name" : "Ezell’s Famous Chicken",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2726 E Cherry St",
+  "Name" : "Fat’s Chicken & Waffles",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "501 2nd Ave W (catering)",
+  "Name" : "FOODArt",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "10515 Greenwood Ave N",
+  "Name" : "Geo's Cuban Bar & Grill",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "14330 Lake City Way NE",
+  "Name" : "Heaven Sent Fried Chicken",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4869 Rainier Ave S",
+  "Name" : "Island Soul Rum Bar & Soul Shack",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1510 NE 117th St",
+  "Name" : "Jebena Café",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2717 E Union St",
+  "Name" : "Joyce's Market And Cafe",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2122 NE 65th St",
+  "Name" : "JuneBaby",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2510 1st Ave",
+  "Name" : "Jerk Shack",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4417 Fauntleroy Way SW",
+  "Name" : "Jones Barbeque",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5100 Rainier Ave S",
+  "Name" : "Kezira Eritrean and Ethiopian Cuisine",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "7820 Rainier Ave S, Unit A",
+  "Name" : "King Philly Cheesesteaks",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4903 Rainier Ave S",
+  "Name" : "La Teranga",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4225 Rainier Ave S",
+  "Name" : "Lil Red Takeout & Catering",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2120 NE 65th St",
+  "Name" : "Lucinda Grain Bar",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "8300 Rainier Ave S",
+  "Name" : "Mama Sambusa's Small Kitchen",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1412 E Union",
+  "Name" : "Marjorie",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "260 E Cherry St",
+  "Name" : "Meskel Ethiopian Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "3250 Airport Way (catering)",
+  "Name" : "Mety’s Events",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "7545 Lake City Way NE",
+  "Name" : "Mojito",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "6754 Martin Luther King Jr Way S",
+  "Name" : "Momona Cafe & Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1224 E Jefferson St",
+  "Name" : "Nate’s Wings & Waffles",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5905 California Ave SW",
+  "Name" : "New Luck Toy",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "660 NE Northlake Way",
+  "Name" : "The Northlake Tavern & Pizza House",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1429 12th Ave",
+  "Name" : "Osteria La Spiga",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1715 N 45th St",
+  "Name" : "Pam’s Kitchen",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1429 12th Ave",
+  "Name" : "Plum Bistro",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1419 12th Ave",
+  "Name" : "Plum Chopped",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "305 Harrison St",
+  "Name" : "Plum Pantry",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4611 36th Ave SW",
+  "Name" : "Pot Pie Factory",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "916 E John St",
+  "Name" : "Queen Sheba Ethiopian",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2616 S Jackson St",
+  "Name" : "Quick Pack Food Mart",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2801 E Cherry St",
+  "Name" : "Ras Dashen Ethiopian Cuisine",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "5041 Rainier Ave S",
+  "Name" : "Safari Njema",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2404 NE 65th St",
+  "Name" : "Salare",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "4029 E Madison St",
+  "Name" : "Scoop Du Jour Ice Creamery",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "3621 33rd Ave S",
+  "Name" : "Seattle Chicken Express",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2915-B E Madison St",
+  "Name" : "Simply Soulful",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1800 E Yesler Way",
+  "Name" : "Soulful Dishes",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "6860 E Green Lake Way N",
+  "Name" : "Spud Fish & Chips",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1212 E Jefferson St",
+  "Name" : "Taste of the Caribbean",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2000 23rd Ave S",
+  "Name" : "The Barbeque Pit",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "3016 Rainier Ave S",
+  "Name" : "The Comfort Zone",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "3019 Martin Luther King Jr Way",
+  "Name" : "The Original Philly’s",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "9099 Seward Park Ave S, Unit1",
+  "Name" : "Umami Kushi",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2600 SW Barton St",
+  "Name" : "WingStop",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "10002 Aurora Ave N",
+  "Name" : "WingStop",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "3208 Rainier Ave S #101",
+  "Name" : "WingStop",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "7729 Rainier Ave S",
+  "Name" : "Yusrah and Sabah Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2722 E Cherry St",
+  "Name" : "Zagol Ethiopian Restaurant",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "1219 E Jefferson St",
+  "Name" : "Zobel Ethiopian Cuisine",
+  "Owned" : "B",
+  "Type" : "RESTAURANTS"
+}, {
+  "Address" : "2801 S Hanford St",
+  "Name" : "Baked from the Hart",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "2050 NW Market St",
+  "Name" : "Ballard Beer Company",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "8136 Rainier Ave S",
+  "Name" : "Bell’s Pastries",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "308 22nd Ave S",
+  "Name" : "Brown Sugar Baking Company",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "6630 Rainier Ave S",
+  "Name" : "Cafe Avole",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "2509 E Cherry St",
+  "Name" : "Central Cafe and Juice Bar",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "4200 Rainier Ave S",
+  "Name" : "Clockwork Counter Bakery",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "2425 E Union St",
+  "Name" : "Cortona Café",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "2300 7th Ave",
+  "Name" : "Downtown Spirits",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "1222 E Madison St",
+  "Name" : "Footprint Wine Tap",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "7148 Martin Luther King Jr Way S",
+  "Name" : "Healthy Creations",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "4611 36th Ave SW",
+  "Name" : "Hot Chocolat",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "8136 Rainier Ave S",
+  "Name" : "Kaffa Coffee & Wine Bar",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "7545 Lake City Way NE",
+  "Name" : "Mojito",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "1408 E Pine St",
+  "Name" : "Poco Wine + Spirits",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "4029 E Madison St",
+  "Name" : "Scoop Du Jour Ice Creamery",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "1524 Minor Ave",
+  "Name" : "Still Liquor",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "2822 Martin Luther King Jr Way S",
+  "Name" : "That Brown Girl Cooks!",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "1535 11th Ave",
+  "Name" : "The Rhino Room",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "1600 S Roberto Maestas Festival St",
+  "Name" : "The Station",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "860 Yesler Way",
+  "Name" : "Tougo Coffee Co.",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+}, {
+  "Address" : "1800 S Jackson St",
+  "Name" : "Wonder Coffee & Sports Bar",
+  "Owned" : "B",
+  "Type" : "COFFEE"
+} ]
