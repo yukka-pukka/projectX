@@ -8,21 +8,10 @@ import {
 } from "@react-google-maps/api";
 
 import mapStyles from "../mapStyles";
-import { formatRelative } from "date-fns";
-import Restaurants from "./restaurants/restaurants";
-import { data } from "browserslist";
-import { firebaseLooper } from "../utils/helper";
-import axios from 'axios';
 import firebase from "firebase";
-import { search } from "language-tags";
-// import RestaurantList from "./listall";
+import UserContext from "../UserContext"
 
 
-const restaurantData = [
-  { id: 1, lat: 47.620084, lng: -122.320126, time: new Date() },
-  { id: 2, lat: 47.614579, lng: -122.333224, time: new Date() },
-  { id: 3, lat: 47.618578, lng: -122.321079, time: new Date() },
-];
 
 const mapContainerStyle = {
   width: "90vw",
@@ -40,43 +29,80 @@ const options = {
   zoomControl: true,
 };
 
-const onLoad = (marker) => {
-  console.log("marker: ", marker);
-};
+// const onLoad = (marker) => {
+//   console.log("marker: ", marker);
+// };
+
 const position = {
   lat: 47.605,
   lng: -122.3344,
 };
 
+function Map(props) {
+  const { user } = React.useContext(UserContext)
+  const [restaurants, setRestaurants] = useState([]);
+  console.log(restaurants && restaurants.filter(r => !r.Location.lng))
 
-const Map= () => {
-const [restaurants, setRestaurants] = useState([]);
-
-  const Search = (e) => { 
-    e.preventDefault()
-    const r = firebase.database().ref('Restaurants');
-    const search = e.target[0].value;
-      r.on('value', (snapshot) => {
-        let filteredResults = Array.from(snapshot.val()).filter((result) => result.Name.toLowerCase().includes(search));
-        setRestaurants(filteredResults);
-      });
-      };
+  const Search = (search) => {
+    const r = firebase.database().ref("Restaurants");
+    r.on("value", (snapshot) => {
+      let filteredResults = Array.from(snapshot.val()).filter((result, i, a) =>
+        result.Name.toLowerCase().includes(search)
+      );
+      setRestaurants(filteredResults);
+    });
+  };
+ 
   
+
+  const saveResults = () => {
+    const r = firebase.database().ref("Searches");
+    r.set({
+      restaurants: restaurants,
+      userID: user.uid,
+      query: query,
+    });
+
+    r.get().then((snapshot) => {
+      console.log('saved searches', snapshot.val());
+    })
+    console.log(restaurants);
+  };
 
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
   });
 
   const [selected, setSelected] = React.useState(null);
+  const [query, setQuery] = React.useState(
+    new URLSearchParams(props.location.search).get("q") || ''
+  );
+
+  React.useEffect(() => {
+    Search(query)
+  }, [])
 
   if (loadError) return "Error loading maps";
 
   return (
     <div>
-      <form onSubmit={ (e)=> Search(e)}>
-        <input type="search"></input>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          Search(query);
+        }}
+      >
+        <input type="button" onClick={saveResults} value="Save Search" disabled={!user} />
+        <input
+          onInput={(e) => {
+            console.log(e.target.value);
+            setQuery(e.target.value);
+          }}
+          type="search"
+          value={query}
+        ></input>
       </form>
-      
+
       {isLoaded && (
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
@@ -88,9 +114,11 @@ const [restaurants, setRestaurants] = useState([]);
           {restaurants.map((restaurant) => (
             <Marker
               key={restaurant.Name}
-              onLoad={onLoad}
-              position={{ lat: restaurant.Location.lat, lng: restaurant.Location.lng }}
-
+              // onLoad={onLoad}
+              position={{
+                lat: restaurant.Location.lat,
+                lng: restaurant.Location.lng,
+              }}
               onClick={() => {
                 setSelected(restaurant);
               }}
@@ -99,17 +127,17 @@ const [restaurants, setRestaurants] = useState([]);
 
           {selected ? (
             <InfoWindow
-              position={{ lat: selected.Location.lat, lng: selected.Location.lng }}
+              position={{
+                lat: selected.Location.lat,
+                lng: selected.Location.lng,
+              }}
               onCloseClick={() => {
                 setSelected(null);
-              }} 
+              }}
             >
               <div>
                 <h2> {selected.Name} </h2>
-                <p>
-                  {selected.Address}
-                  
-                </p>
+                <p>{selected.Address}</p>
               </div>
             </InfoWindow>
           ) : null}
@@ -117,6 +145,6 @@ const [restaurants, setRestaurants] = useState([]);
       )}
     </div>
   );
-};
+}
 
 export default Map;

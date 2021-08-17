@@ -18,12 +18,6 @@ class Review extends Component {
                     name: 'Laleeba',
                     review: 'Aweful Place.\n\n Food is disgusting.',
                     date: new Date(new Date().setDate(new Date().getDate() - 10))
-                },
-                {
-                    rating: 1,
-                    name: 'Queen Sheeba',
-                    review: 'Great Atmosphere.\n\n Friendly staff .',
-                    date: new Date()
                 }
             ],
             validation: ''
@@ -32,12 +26,7 @@ class Review extends Component {
         this.submitForm = this.submitForm.bind(this);
     }
 
-    componentWillMount()
-    {
-        this.setState({
-            ...this.state, averageRating: this.getAverageRating(this.state.reviews)
-        });
-    }
+
 
     render()
     {
@@ -60,12 +49,11 @@ class Review extends Component {
 
                                 <p className="font-size-medium">
                                     Please share your experience!&nbsp;
-                                    <strong className="text-color-primary">{this.state.averageRating}</strong>
+                                
                                 </p>
-
-                                {this.renderList()}
                             </div>
                             {this.renderForm()}
+                            {this.renderReviews()}
                         </div>
                     </div>
 
@@ -86,19 +74,30 @@ class Review extends Component {
         return <Form submitForm={this.submitForm} validation={this.state.validation}/>;
     }
 
+    renderReviews()
+    {
+        return this.state.reviews.map(review=>{
+            return( <div>
+               <div> {
+                    review.name
+                
+                      }</div> 
+                <div> {
+                    review.review
+                
+                      }</div> 
+                <div> {
+                    review.rating
+                
+                      }</div> 
+            </div>)
+        });
+    }
+
     submitForm(event)
     {
         event.preventDefault();
         const reviews = this.state.reviews.slice();
-
-        if(event.target.rating.value === '' || event.target.name.value === '' || event.target.review.value === '') {
-            this.setState({
-                ...this.state,
-                validation: <div className="validation">Not all required fields are completed.</div>
-            });
-
-            return;
-        }
 
         this.setState({
             ...this.state,
@@ -111,25 +110,12 @@ class Review extends Component {
             review: event.target.review.value,
             date: new Date()
         });
-
+        console.log(reviews)
         this.setState({
             ...this.state,
             reviews: reviews,
-            averageRating: this.getAverageRating(reviews),
             validation: ''
         });
-    }
-
-    getAverageRating(reviews)
-    {
-        var totalRating = 0;
-
-        reviews.map(function (review)
-        {
-            totalRating = totalRating + review.rating;
-        });
-
-        return Math.round(totalRating / reviews.length * 2 * 10) / 10;
     }
 }
 
