@@ -20,6 +20,7 @@ const Routes = () => (
         <Route exact path="/">{(props) => (
           <div>
           <h1>Home!</h1>
+          <img src="/heart.jpg" className="image_style"/>
           {props.location.state && props.location.state.message && (
             <div className="alert alert-primary">{props.location.state.message}</div>
           )}
