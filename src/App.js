@@ -6,7 +6,7 @@ import firebase from "./utils/firebase";
 
 
 
-const App = () => {
+const App = () =>  {
   const [user, setUser] = React.useState(undefined);
 
   React.useEffect(() => {
