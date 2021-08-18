@@ -12,15 +12,24 @@ import List from "./reviews/list";
 import Profile from "./profile/index";
 import PrivateRoute from "./privateroute";
 
+const mainStyle = {
+  backgroundColor: "DodgerBlue",
+  display: "flex",
+  justifyContent: "center",
+  minHeight: "90vh",
+  padding: "100px"
+};
+
 const Routes = () => (
   <BrowserRouter>
+    {/* <Header /> */}
+    <main role="main" style = {mainStyle}>
     <Header />
-    <main role="main" className="container myMain">
       <Switch>
         <Route exact path="/">{(props) => (
           <div>
           <h1>Home!</h1>
-          <img src="/heart.jpg" className="image_style"/>
+          <img src="https://www.vhv.rs/dpng/d/133-1337422_gift-wedding-rose-heart-flower-bouquet-pink-flower.png" className="image_style"/>
           {props.location.state && props.location.state.message && (
             <div className="alert alert-primary">{props.location.state.message}</div>
           )}
@@ -34,6 +43,7 @@ const Routes = () => (
           <Profile />
         </PrivateRoute>
       </Switch>
+   
     </main>
     <Footer />
   </BrowserRouter>

@@ -21,7 +21,7 @@ class Form extends Component {
     render()
     {
         return (
-            <div className="review-form bg-white content-padding block-margin-top">
+            <div className="review-form content-padding block-margin-top">
 
                 <form className={this.state.isActive ? '' : 'hide'} onSubmit={this.props.submitForm}>
 
@@ -33,7 +33,7 @@ class Form extends Component {
                     rating = {this.state.rating}
                     onClick={(rating) => this.setState({...this.state,rating})}
                        
-                    />;
+                    />
 
                     <button className="button" type="submit" value="Submit">
                         Submit 

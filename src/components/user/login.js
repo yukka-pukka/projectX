@@ -3,7 +3,8 @@ import Form from "./form";
 
 class Login extends Component {
   render() {
-    return <Form history={this.props.history} />;
+    return <div><Form history={this.props.history}/>
+      </div>;
   }
 }
 

@@ -2,7 +2,8 @@
 import React, {Component} from 'react';
 import List from './list.js';
 import Form from './reviewform.js';
-// import './css/reviews.css';
+import Button from '../button/button.js'
+import './reviews.css';
 
 
 
@@ -42,6 +43,7 @@ class Review extends Component {
                             </h1>
                         </div>
                     </header>
+                    {/* <Button>Example</Button> */}
 
                     <div className="row align-center content-margin-top-negative">
                         <div className="small-12 medium-8 large-6 columns">
@@ -77,16 +79,16 @@ class Review extends Component {
     renderReviews()
     {
         return this.state.reviews.map(review=>{
-            return( <div>
-               <div> {
+            return( <div className = "reviewlist"> 
+               <div> Restaurant Name:  { 
                     review.name
                 
                       }</div> 
-                <div> {
+                <div> Review: {
                     review.review
                 
                       }</div> 
-                <div> {
+                <div> Rating: {
                     review.rating
                 
                       }</div> 
