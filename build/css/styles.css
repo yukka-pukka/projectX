@@ -1,0 +1,41 @@
+body {
+    background-color: thistle;
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto';
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+.myMain {
+    margin-top: 56px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+
+ 
+.site-header {
+    background-color: rgba(135, 74, 150, 0.85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: rgb(107, 22, 128);
+    transition: ease-in-out color .15s;
+}
+
+.footer  {
+    position: fixed;
+    height: 50px;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+      
+} 
