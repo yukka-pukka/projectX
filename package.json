@@ -1,7 +1,5 @@
-
-
 {
-  "homepage" : "http://yukka-pukka.github.io/projectX",
+  "homepage": "http://yukka-pukka.github.io/projectX",
   "name": "capstonefiles",
   "version": "0.1.0",
   "private": false,
@@ -44,8 +42,6 @@
       "not dead",
       "not op_mini all"
     ],
-   
-
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
