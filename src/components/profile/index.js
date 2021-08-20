@@ -1,37 +1,33 @@
-import React from 'react'
+import React from "react";
 import UserContext from "../../UserContext";
 
+const Profile = () => {
+  const { user } = React.useContext(UserContext);
 
-const Profile = () =>{
-    const { user } = React.useContext(UserContext);
-
-    return(
+  return (
+    <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          margin: "15 px 0px",
+        }}
+      >
         <div>
-            <div style = {{
-                display: "flex",
-                justifyContent: "space-around",
-                margin: "15 px 0px",
-            }}>
-                <div>
-                    <img style ={{ width: "160px", height :" 160 px", borderRadius: "80px"}}
-                    
-                 />
-                </div>
-                <div>
-                    <h4>Welcome {user.email}</h4>
-                </div>
-                    <div>
-                        <h5>Favorites</h5>
-                    </div>
+          <img
+            style={{ width: "160px", height: " 160 px", borderRadius: "80px" }}
+          />
         </div>
+        <div>
+          <h5>Welcome {user.email}</h5>
+        </div>
+        <div>{/* <h5>Favorites</h5> */}</div>
+      </div>
     </div>
-
-
-    )
-}
+  );
+};
 
 export default Profile;
-
 
 // import React, { useContext } from 'react';
 // import { Redirect } from 'react-router-dom';

@@ -13,28 +13,34 @@ import Profile from "./profile/index";
 import PrivateRoute from "./privateroute";
 
 const mainStyle = {
-  backgroundColor: "DodgerBlue",
+  backgroundColor: "lavender",
   display: "flex",
   justifyContent: "center",
   minHeight: "90vh",
-  padding: "100px"
+  padding: "100px",
 };
 
 const Routes = () => (
   <BrowserRouter>
     {/* <Header /> */}
-    <main role="main" style = {mainStyle}>
-    <Header />
+    <main role="main" style={mainStyle}>
+      <Header />
       <Switch>
-        <Route exact path="/">{(props) => (
-          <div>
-          <h1>Home!</h1>
-          <img src="https://www.vhv.rs/dpng/d/133-1337422_gift-wedding-rose-heart-flower-bouquet-pink-flower.png" className="image_style"/>
-          {props.location.state && props.location.state.message && (
-            <div className="alert alert-primary">{props.location.state.message}</div>
+        <Route exact path="/">
+          {(props) => (
+            <div>
+              {props.location.state && props.location.state.message && (
+                <div className="alert alert-primary">
+                  {props.location.state.message}
+                </div>
+              )}
+              <h1>Dine Like It Matters</h1>
+              <img
+                src="https://www.vhv.rs/dpng/d/133-1337422_gift-wedding-rose-heart-flower-bouquet-pink-flower.png"
+                className="image_style"
+              />
+            </div>
           )}
-          </div>
-        )}
         </Route>
         <Route exact path="/restaurants" component={Map} />
         <Route exact path="/login" component={Login} />
@@ -43,7 +49,6 @@ const Routes = () => (
           <Profile />
         </PrivateRoute>
       </Switch>
-   
     </main>
     <Footer />
   </BrowserRouter>

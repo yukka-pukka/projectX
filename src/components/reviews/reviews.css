@@ -1,4 +1,8 @@
 .reviewlist {
-margin: 20px ;
+margin: 20px;
 
+}
+
+.rating__prefix {
+    display: block;
 }

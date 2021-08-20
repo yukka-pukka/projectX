@@ -27,6 +27,7 @@ class Form extends Component {
 
                     {this.props.validation}
                     
+                <label className="rating__prefix font-size-small">Review</label>
                     <textarea name="review" value={this.props.review} placeholder="Put your review here."
                               onChange={this.handleInputChange}/>
                     <Star 
@@ -35,7 +36,7 @@ class Form extends Component {
                        
                     />
 
-                    <button className="button" type="submit" value="Submit">
+                    <button className="btn btn-primary mt-2" type="submit" value="Submit">
                         Submit 
                     </button>
                 </form>

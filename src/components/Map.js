@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./map.css";
 
 import {
   GoogleMap,
@@ -9,9 +10,7 @@ import {
 
 import mapStyles from "../mapStyles";
 import firebase from "firebase";
-import UserContext from "../UserContext"
-
-
+import UserContext from "../UserContext";
 
 const mapContainerStyle = {
   width: "90vw",
@@ -39,9 +38,9 @@ const position = {
 };
 
 function Map(props) {
-  const { user } = React.useContext(UserContext)
+  const { user } = React.useContext(UserContext);
   const [restaurants, setRestaurants] = useState([]);
-  console.log(restaurants && restaurants.filter(r => !r.Location.lng))
+  console.log(restaurants && restaurants.filter((r) => !r.Location.lng));
 
   const Search = (search) => {
     const r = firebase.database().ref("Restaurants");
@@ -52,8 +51,6 @@ function Map(props) {
       setRestaurants(filteredResults);
     });
   };
- 
-  
 
   const saveResults = () => {
     const r = firebase.database().ref("Searches");
@@ -64,8 +61,8 @@ function Map(props) {
     });
 
     r.get().then((snapshot) => {
-      console.log('saved searches', snapshot.val());
-    })
+      console.log("saved searches", snapshot.val());
+    });
     console.log(restaurants);
   };
 
@@ -75,24 +72,30 @@ function Map(props) {
 
   const [selected, setSelected] = React.useState(null);
   const [query, setQuery] = React.useState(
-    new URLSearchParams(props.location.search).get("q") || ''
+    new URLSearchParams(props.location.search).get("q") || ""
   );
 
   React.useEffect(() => {
-    Search(query)
-  }, [])
+    Search(query);
+  }, []);
 
   if (loadError) return "Error loading maps";
 
   return (
     <div>
       <form
+        className="searchform "
         onSubmit={(e) => {
           e.preventDefault();
           Search(query);
         }}
       >
-        <input type="button" onClick={saveResults} value="Save Search" disabled={!user} />
+        <input
+          type="button"
+          onClick={saveResults}
+          value="Save Search"
+          disabled={!user}
+        />
         <input
           onInput={(e) => {
             console.log(e.target.value);
