@@ -1,3 +1,4 @@
+import { Autocomplete } from "@react-google-maps/api";
 import React from "react";
 import UserContext from "../../UserContext";
 
@@ -8,9 +9,7 @@ const Profile = () => {
     <div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-around",
-          margin: "15 px 0px",
+          width: "100%",
         }}
       >
         <div>
@@ -19,9 +18,27 @@ const Profile = () => {
           />
         </div>
         <div>
-          <h5>Welcome {user.email}</h5>
+          <h5
+            style={{
+              width: "fit-content",
+              marginRight: "0",
+              marginLeft: "auto",
+            }}
+          >
+            Welcome {user.email}
+          </h5>
         </div>
-        <div>{/* <h5>Favorites</h5> */}</div>
+      </div>
+      <h2
+        style={{
+          marginTop: "24px",
+          margin: "15 px 0px",
+        }}
+      >
+        Saved Search:
+      </h2>
+      <div>
+        <a href="/restaurants?q=wings"> Wings</a>
       </div>
     </div>
   );
